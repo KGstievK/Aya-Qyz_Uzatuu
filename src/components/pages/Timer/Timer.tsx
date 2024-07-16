@@ -12,20 +12,20 @@ const Timer: React.FC = () => {
         <div className={scss.content}>
           <div className={scss.titlee}>
             <div className={scss.line}></div>
-            <h1 className={scss.kindentosca}>Кымбаттуу туугандар жана достор</h1>
+            <h1>Кымбаттуу туугандар жана достор</h1>
             <div className={scss.line}></div>
           </div>
           <div className={scss.ourDay}>
             <p className={oswald.className}>
               Кутман менен Айжан үйлөнүү тоюна арналган салтанаттуу кечеде ак дастарконкбуздун кадырлуу коногу болуп, батаңыздарды берип кетүүгө чакырабыз!
             </p>
-            <h1 className={scss.kindentosca}>
+            <h1>
               Той ээлери: Юруслан, Жазгуль
             </h1>
           </div>
           <div className={scss.titlee}>
             <div className={scss.line}></div>
-            <h1 className={scss.kindentosca}>Дорогие родные и друзья</h1>
+            <h1>Дорогие родные и друзья</h1>
             <div className={scss.line}></div>
           </div>
           <div className={scss.ourDay}>
@@ -35,7 +35,7 @@ const Timer: React.FC = () => {
             <p className={oswald.className}>
               Будем рады пригласить вас стать почётными гостями торжества, посвящённого бракосочетания
             </p>
-            <h1 className={scss.kindentosca}>
+            <h1>
               С уважением хозяева торжества: <br /> Юруслан, Жазгуль
             </h1>
           </div>
