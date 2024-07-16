@@ -4,7 +4,7 @@ import FormGuest from "./FormGuest/FormGuest"
 import Gps from "./Gps/Gps"
 import Map from "./Map/Map"
 import NikhahSection from "./Nikhah/NikhahSection"
-import SoTime from "./SoTime/SoTime"
+import SoTimes from "./SoTime/SoTimes"
 import Timer from "./Timer/Timer"
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
       position: "relative",
     }}>
       <NikhahSection/>
-      <SoTime/>
+      <SoTimes/>
       <Timer/>
       <Gps/>
       <Map/>
