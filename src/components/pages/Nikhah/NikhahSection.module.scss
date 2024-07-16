@@ -4,7 +4,7 @@
   width: 100%;
   height: auto;
   background-color: #fff;
-  color: #e8e9e3;
+  color: #FFF;
   right: 0;
   left: 0;
   .back {
@@ -91,7 +91,7 @@
             border-bottom: 2px solid #FFF;
             text-align: center;
             font-size: clamp(28px, 2vw, 42px);
-            font-weight: 300;
+            font-weight: 400;
           }
           .day {
             display: flex;
@@ -105,7 +105,7 @@
             border-right: 2px solid #FFF;
             h3 {
               font-size: clamp(38px, 3vw,42px);
-              font-weight: 300;
+              font-weight: 400;
               text-align: center;
             }
             p {
@@ -113,6 +113,7 @@
               margin: 0;
               text-align: center;
               font-size: clamp(14px, 2vw, 24px);
+              font-weight: 400;
             }
           }
           @media (max-width: 1051px) {
@@ -133,7 +134,7 @@
             border-bottom: 1px solid #FFF;
             text-align: center;
             font-size: clamp(28px, 2vw, 42px);
-            font-weight: 300;
+            font-weight: 400;
           }
           .day {
             display: flex;
@@ -146,7 +147,7 @@
             border-right: 1px solid #FFF;
             h3 {
               font-size: clamp(38px, 3vw,42px);
-              font-weight: 300;
+              font-weight: 400;
               text-align: center;
             }
             p {
@@ -154,6 +155,7 @@
               margin: 0;
               text-align: center;
               font-size: clamp(24px, 2vw, 24px);
+              font-weight: 400;
             }
           }
           @media (min-width: 1052px) {
