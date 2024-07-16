@@ -1,0 +1,16 @@
+.Map {
+  width: 100%;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    iframe {
+      width: 100%;
+      @media (max-width: 480px) {
+        height: 100vw;
+      }
+    }
+  }
+}
