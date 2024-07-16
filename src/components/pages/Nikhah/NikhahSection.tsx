@@ -60,7 +60,27 @@ const NikhahSection: FC = () => {
           <div className={scss.name}>
             <div className={scss.we}>
               <Image className={scss.floral1} src={floral1} alt=''/>
+              <div className={scss.date}>
+                <h2 className={oswald.className}>ОКТЯБРЯ</h2>
+                <div className={scss.day}>
+                <h3 className={oswald.className}>5</h3>
+                <p className={oswald.className}>2024</p>
+                </div>
+                <h2 className={oswald.className}>СУББОТА</h2>
+              </div>
             </div>
+          </div>
+          <div className={scss.name}>
+              <div className={scss.we}>
+                <div className={scss.dateCopy}>
+                  <h2 className={oswald.className}>ОКТЯБРЯ</h2>
+                  <div className={scss.day}>
+                  <h3 className={oswald.className}>5</h3>
+                  <p className={oswald.className}>2024</p>
+                  </div>
+                  <h2 className={oswald.className}>СУББОТА</h2>
+                </div>
+              </div>
           </div>
         </div>
       </div>
