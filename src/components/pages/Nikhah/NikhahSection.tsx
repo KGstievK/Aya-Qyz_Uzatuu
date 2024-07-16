@@ -55,8 +55,8 @@ const NikhahSection: FC = () => {
     <section className={scss.NikhahSection}>
       <div className="container">
         <Image width={900} height={800} className={scss.back} src={back} alt='' />
+          <h1>Wedding Day</h1>
         <div className={scss.content}>
-          {/* <img src={back1} alt="" /> */}
           <div className={scss.name}>
             <div className={scss.we}>
               <Image className={scss.floral1} src={floral1} alt=''/>
