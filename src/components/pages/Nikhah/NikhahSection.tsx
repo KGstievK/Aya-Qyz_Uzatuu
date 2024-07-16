@@ -1,8 +1,8 @@
+"use client"
 import Image from 'next/image'
 import scss from './NikhahSection.module.scss'
 import floral1 from '@/assets/Vector.svg'
 import back from '@/assets/back.jpg'
-import back1 from '../../../assets/back.jpg'
 import { Oswald, Bodoni_Moda, Playfair_Display } from "next/font/google";
 import { FC, useEffect, useState } from 'react';
 const bodoni_Moda = Bodoni_Moda({ subsets: ["latin"] });
@@ -27,7 +27,7 @@ const NikhahSection: FC = () => {
     seconds: 0,
   });
 
-  const targetDate = new Date("2024-10-08T17:00:00"); // Замените на вашу целевую дату и время
+  const targetDate = new Date("2024-10-05T17:00:00"); 
 
   const updateTimer = () => {
     const now = new Date();

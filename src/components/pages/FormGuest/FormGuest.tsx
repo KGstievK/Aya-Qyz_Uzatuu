@@ -75,7 +75,14 @@ const FormGuest = () => {
   };
 
   if (show) {
-    return <></>;
+    return (
+    <section className={scss.FormGuest}>
+      <div className={scss.content}>
+        <h1>СПАСИБО ЧТО ЗАПОЛНИЛИ АНКЕТУ</h1>
+        <p>{user?.name} И {user?.partner}</p>
+      </div>
+    </section>
+    )
   }
 
   return (
@@ -83,7 +90,7 @@ const FormGuest = () => {
       <div className="container">
         <div className={scss.content}>
           <h1>АНКЕТА ГОСТЯ</h1>
-          <p>Просьба подтвердить присутствие до октября</p>
+          <p>Просьба подтвердить присутствие до 5 октября</p>
           <form action="" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
