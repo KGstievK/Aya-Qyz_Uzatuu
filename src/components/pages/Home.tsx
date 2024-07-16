@@ -4,7 +4,7 @@ import FormGuest from "./FormGuest/FormGuest"
 import Gps from "./Gps/Gps"
 import Map from "./Map/Map"
 import NikhahSection from "./Nikhah/NikhahSection"
-import SoTime from "./Time/SoTime"
+import SoTime from "./SoTime/SoTime"
 import Timer from "./Timer/Timer"
 
 const Home = () => {
