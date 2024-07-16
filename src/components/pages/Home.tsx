@@ -7,6 +7,7 @@ import Map from "./Map/Map"
 import NikhahSection from "./Nikhah/NikhahSection"
 import Timer from "./Timer/Timer"
 import Welcome from "./Welcome/Welcome"
+import Time from "./Time/Time"
 
 const Home = () => {
   return (
@@ -14,11 +15,12 @@ const Home = () => {
       display: 'flex',
       flexDirection: 'column',
       alignItems: "center",
-      justifyContent: "center",
-      gap: '50px'
+      justifyContent: "flex-start",
+      gap: '50px',
+      position: "relative",
     }}>
-      <Welcome />
       <NikhahSection/>
+      <Time/>
       <Timer/>
       <Gps/>
       <Map/>

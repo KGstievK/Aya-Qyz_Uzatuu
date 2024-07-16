@@ -62,26 +62,6 @@ const NikhahSection: FC = () => {
               <Image className={scss.floral1} src={floral1} alt=''/>
             </div>
           </div>
-          <div className={scss.ourDay}>
-            <div className={scss.time}>
-              <h2 className={oswald.className}>
-                {timeLeft.days}{" "}
-                <span className={playfair_display.className}>КҮН</span>
-              </h2>
-              <h2 className={oswald.className}>
-                {timeLeft.hours}{" "}
-                <span className={playfair_display.className}>СААТ</span>
-              </h2>
-              <h2 className={oswald.className}>
-                {timeLeft.minutes}{" "}
-                <span className={playfair_display.className}>МИНУТА</span>
-              </h2>
-              <h2 className={oswald.className}>
-                {timeLeft.seconds}{" "}
-                <span className={playfair_display.className}>СЕКУНДА</span>
-              </h2>
-            </div>
-          </div>
         </div>
       </div>
     </section>
