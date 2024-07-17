@@ -1,5 +1,3 @@
-
-
 .Dad {
   width: 100%;
   height: auto;
@@ -7,6 +5,12 @@
   color: #000;
   padding: clamp(15px, 2vw, 30px);
   .content {
+    @font-face {
+      font-family: 'Andantino-script' ;
+      src: url('../../../assets/Fonts/ofont.ru_Andantino_script.ttf');
+      font-weight: 400;
+      font-style: italic;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,6 +21,7 @@
       font-weight: 350;
     }
     h2 {
+      font-family: 'Andantino-script';
       font-size: clamp(30px, 5vw, 44px);
       font-weight: 350;
     }
