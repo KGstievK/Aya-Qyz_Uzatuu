@@ -1,8 +1,7 @@
-"use client"
 import Image from 'next/image'
 import scss from './NikhahSection.module.scss'
-import floral1 from '../../../assets/Vector.svg'
-import back from '../../../assets/back.jpg'
+import floral1 from "@/assets/Vector.svg"
+import back from "@/assets/back.jpg"
 import { Oswald, } from "next/font/google";
 import { FC, } from 'react';
 
