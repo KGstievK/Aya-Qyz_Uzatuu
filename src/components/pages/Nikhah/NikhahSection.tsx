@@ -3,9 +3,8 @@ import Image from 'next/image'
 import scss from './NikhahSection.module.scss'
 import floral1 from '@/assets/Vector.svg'
 import back from '@/assets/back.jpg'
-import { Oswald, Bodoni_Moda, Playfair_Display } from "next/font/google";
-import { FC, useEffect, useState } from 'react';
-const bodoni_Moda = Bodoni_Moda({ subsets: ["latin"] });
+import { Oswald } from "next/font/google";
+import { FC } from 'react';
 
 
 
