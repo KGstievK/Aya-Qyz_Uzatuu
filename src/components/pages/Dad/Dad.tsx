@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import scss from './Dad.module.scss'
-import img from '@/assets/img_our_love.jpg'
+import img from '../../../../public/assets/img_our_love.jpg'
 
 const Dad = () => {
   return (

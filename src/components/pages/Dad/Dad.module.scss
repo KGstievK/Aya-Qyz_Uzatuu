@@ -7,19 +7,6 @@
   color: #000;
   padding: clamp(15px, 2vw, 30px);
   .content {
-    @font-face {
-      font-family: 'Andantino-script' ;
-      src: url('../../../assets/Fonts/ofont.ru_Andantino_script.ttf');
-      font-weight: 400;
-      font-style: italic;
-    }
-    @font-face {
-      font-family: "Kindentosca";
-      src: url("../../../assets/Fonts/Kindentosca.woff2") format("woff2"),
-           url("../../../assets/Fonts/Kindentosca.woff") format("woff");
-      font-weight: 500;
-      font-style: italic;
-    }
     display: flex;
     align-items: center;
     justify-content: center;
@@ -30,7 +17,6 @@
       font-weight: 350;
     }
     h2 {
-      font-family: 'Kindentosca';
       font-size: clamp(30px, 5vw, 44px);
       font-weight: 350;
     }
