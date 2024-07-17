@@ -15,7 +15,7 @@ const NikhahSection: FC = () => {
   return (
     <section className={scss.NikhahSection}>
       <div className="container">
-        <Image width={900} height={800} className={scss.back} src={back} alt='' />
+        <Image className={scss.back} src={back} alt='' />
           <h1>Wedding Day</h1>
         <div className={scss.content}>
           <div className={scss.name}>
