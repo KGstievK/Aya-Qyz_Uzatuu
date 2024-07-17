@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Kindentosca";
+  src: url("/assets/Fonts/Kindentosca.woff2") format("woff2"),
+       url("/assets/Fonts/Kindentosca.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
 .Dad {
   width: 100%;
   height: auto;
@@ -21,7 +29,7 @@
       font-weight: 350;
     }
     h2 {
-      font-family: 'Andantino-script';
+      font-family: 'Kindentosca';
       font-size: clamp(30px, 5vw, 44px);
       font-weight: 350;
     }
