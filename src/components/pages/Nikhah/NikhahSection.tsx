@@ -3,13 +3,12 @@ import scss from './NikhahSection.module.scss'
 import floral1 from "@/assets/Vector.svg"
 import back from "@/assets/back.jpg"
 import { Oswald, } from "next/font/google";
-import { FC, } from 'react';
 
 
 
 const oswald = Oswald({ subsets: ["latin"] });
 
-const NikhahSection: FC = () => {
+const NikhahSection = () => {
 
   return (
     <section className={scss.NikhahSection}>
