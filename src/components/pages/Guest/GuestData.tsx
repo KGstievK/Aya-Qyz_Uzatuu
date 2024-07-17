@@ -35,18 +35,18 @@ const GuestData: FC = () => {
     const updateData = {
       isCompleted: !isCompleted,
     };
-    const { data } = await axios.patch(`${url}/wedding_v1/${_id}`, updateData);
+    const { data } = await axios.patch(`${url}/Kutman-and-Aijan/${_id}`, updateData);
     setGuests(data);
   };
 
   const deleteTodo = async (_id: number) => {
-    const { data } = await axios.delete(`${url}/wedding_v1/${_id}`);
+    const { data } = await axios.delete(`${url}/Kutman-and-Aijan/${_id}`);
     setGuests(data);
   };
 
   const fetchGuests = async () => {
     try {
-      const { data } = await axios.get(`${url}/wedding_v1`);
+      const { data } = await axios.get(`${url}/Kutman-and-Aijan`);
       setGuests(data);
     } catch (error) {
       console.error("Error fetching guest data:", error);

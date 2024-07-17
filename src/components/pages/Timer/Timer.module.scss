@@ -12,7 +12,9 @@
 
     @font-face {
       font-family: "Kindentosca";
-      src: url("../../../assets/Fonts/Kindentosca.otf");
+      src: url("../../../assets/Fonts/Kindentosca.woff2") format("woff2"),
+           url("../../../assets/Fonts/Kindentosca.woff") format("woff"),
+           url("../../../assets/Fonts/Kindentosca.otf") format("opentype");
       font-weight: 500;
       font-style: italic;
     }
