@@ -22,7 +22,7 @@ const NikhahSection = () => {
                   <h3 className={oswald.className}>4</h3>
                   <p className={oswald.className}>2024</p>
                 </div>
-                <h2 className={oswald.className}>СУББОТА</h2>
+                <h2 className={oswald.className}>ПЯТНИЦА</h2>
               </div>
               <div className={scss.time}>
                 <h4 className={oswald.className}>17:00</h4>
