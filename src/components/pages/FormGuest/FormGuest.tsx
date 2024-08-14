@@ -90,7 +90,7 @@ const FormGuest = () => {
       <div className="container">
         <div className={scss.content}>
           <h1>АНКЕТА ГОСТЯ</h1>
-          <p>Просьба подтвердить присутствие до 5 октября</p>
+          <p>Просьба подтвердить присутствие до 2 октября</p>
           <form action="" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
