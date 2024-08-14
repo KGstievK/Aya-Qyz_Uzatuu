@@ -162,6 +162,36 @@
             display: none;
           }
         }
+        .time {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-bottom:40px ;
+          @media (max-width: 1051px) {
+            display: none;
+          }
+          h4 {
+            font-size: 24px;
+            font-weight: 300;
+          }
+        }
+        .timeCopy {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          margin-bottom:40px ;
+          @media (min-width: 1052px) {
+            display: none;
+          }
+          h4 {
+            font-size: 24px;
+            font-weight: 300;
+          }
+        }
       }
     }
   }
