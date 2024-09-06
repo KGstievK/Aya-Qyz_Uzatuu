@@ -17,12 +17,12 @@ const Home = () => {
       gap: '50px',
       position: "relative",
     }}>
-      <NikhahSection/>
-      <SoTimes/>
-      <Timer/>
-      <Gps/>
-      <Map/>
-      <Dad/>
+      {/* <NikhahSection/> */}
+      {/* <SoTimes/> */}
+      {/* <Timer/> */}
+      {/* <Gps/> */}
+      {/* <Map/> */}
+      {/* <Dad/> */}
       <FormGuest/>
     </div>
 

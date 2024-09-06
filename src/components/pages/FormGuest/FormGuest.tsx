@@ -40,13 +40,13 @@ const FormGuest = () => {
         partner: FormData.partner,
         dev: FormData.dev,
       };
-      const { data: responseName } = await axios.post(`${url}/Kutman-and-Aijan`, nameData, {
+      const { data: responseName } = await axios.post(`${url}/aijan`, nameData, {
         headers: {
           Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
         },
       });
-      const { data: responsePartner } = await axios.post(`${url}/Kutman-and-Aijan`, partnerData, {
+      const { data: responsePartner } = await axios.post(`${url}/aijan`, partnerData, {
         headers: {
           Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
@@ -90,7 +90,7 @@ const FormGuest = () => {
       <div className="container">
         <div className={scss.content}>
           <h1>АНКЕТА ГОСТЯ</h1>
-          <p>Просьба подтвердить присутствие до 2 октября</p>
+          {/* <p>Просьба подтвердить присутствие до 2 октября</p> */}
           <form action="" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"
