@@ -18,7 +18,6 @@ const url = process.env.NEXT_PUBLIC_API_URL;
 const FormGuest = () => {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState<FormType | null>(null);
-  const [star, setStar] = useState<FormType | null>(null);
   const { register, handleSubmit } = useForm<FormType>({});
 
   useEffect(() => {
@@ -33,26 +32,19 @@ const FormGuest = () => {
       const nameData = {
         id: FormData._id,
         name: FormData.name,
-        dev: FormData.dev,
-      };
-      const partnerData = {
-        id: FormData._id,
         partner: FormData.partner,
         dev: FormData.dev,
       };
-      const { data: responseName } = await axios.post(`${url}/aijan`, nameData, {
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json",
-        },
-      });
-      const { data: responsePartner } = await axios.post(`${url}/aijan`, partnerData, {
+ 
+      const { data: responseName } = await axios.post(`${url}/Kutman-and-Aijan`, nameData, {
         headers: {
           Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
         },
       });
 
+      console.log(responseName);
+      
       const messageModel = (FormData: FormType) => {
         let messageTG = `КИМ: <b>${FormData.name}</b>\n`;
         messageTG += `ЖААРЫ: <b>${FormData.partner}</b>\n`;
@@ -68,7 +60,6 @@ const FormGuest = () => {
       localStorage.setItem("name", JSON.stringify(FormData));
       localStorage.setItem("show", JSON.stringify(true));
       window.location.reload();
-      setStar(responseName);
     } catch (e) {
       console.error(e);
     }
@@ -79,7 +70,9 @@ const FormGuest = () => {
     <section className={scss.FormGuest}>
       <div className={scss.content}>
         <h1>СПАСИБО ЧТО ЗАПОЛНИЛИ АНКЕТУ</h1>
-        <p>{user?.name} И {user?.partner}</p>
+        <p style={{
+          borderBottom: "2px solid #000"
+        }}>{user?.name?.toUpperCase()} {user?.partner && user?.name !== undefined ? <span>И</span> : null } {user?.partner?.toUpperCase()} </p>
       </div>
     </section>
     )
@@ -90,7 +83,7 @@ const FormGuest = () => {
       <div className="container">
         <div className={scss.content}>
           <h1>АНКЕТА ГОСТЯ</h1>
-          {/* <p>Просьба подтвердить присутствие до 2 октября</p> */}
+          <p>Просьба подтвердить присутствие до 2 октября</p>
           <form action="" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="text"

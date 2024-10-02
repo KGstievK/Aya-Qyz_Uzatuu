@@ -23,7 +23,7 @@ const GuestData: FC = () => {
 
   const onSubmitEdit: SubmitHandler<guestType> = async (data) => {
     try {
-      const { data: responseTodos } = await axios.patch(`${url}/aijan/${editId}`, data);
+      const { data: responseTodos } = await axios.patch(`${url}/Kutman-and-Aijan/${editId}`, data);
       setGuests(responseTodos);
       setEditId(null);
     } catch (e) {
@@ -35,18 +35,18 @@ const GuestData: FC = () => {
     const updateData = {
       isCompleted: !isCompleted,
     };
-    const { data } = await axios.patch(`${url}/aijan/${_id}`, updateData);
+    const { data } = await axios.patch(`${url}/Kutman-and-Aijan/${_id}`, updateData);
     setGuests(data);
   };
 
   const deleteTodo = async (_id: number) => {
-    const { data } = await axios.delete(`${url}/aijan/${_id}`);
+    const { data } = await axios.delete(`${url}/Kutman-and-Aijan/${_id}`);
     setGuests(data);
   };
 
   const fetchGuests = async () => {
     try {
-      const { data } = await axios.get(`${url}/aijan`);
+      const { data } = await axios.get(`${url}/Kutman-and-Aijan`);
       setGuests(data);
     } catch (error) {
       console.error("Error fetching guest data:", error);
@@ -86,13 +86,14 @@ const GuestData: FC = () => {
             cursor: "pointer"
           }}>Экспорт в Excel</button>
           <div>
-            <form onSubmit={handleSubmitEdit(onSubmitEdit)}>
+          <form onSubmit={handleSubmitEdit(onSubmitEdit)}>
               <table>
                 <thead>
                   <tr>
                     <th><h2>№</h2></th>
                     <th><h2>Имя</h2></th>
-                    <th><h2>Определение</h2></th>
+                    <th><h2>Партнёр</h2></th>
+                    <th><h2>Кто</h2></th>
                     <th><h2>{editId !== null ? "Действия" : "Кнопки"}</h2></th>
                     {editId !== null ? <th><h2>Кнопки</h2></th> : ''}
                   </tr>
@@ -114,8 +115,8 @@ const GuestData: FC = () => {
                             <input type="text" placeholder="Жаарыңыздын аты-жөнү" {...registerEdit("partner")} defaultValue={item.partner} />
                           </td>
                           <td>
-                            <input type="radio" value="Приду✅" {...registerEdit("dev")} defaultChecked={item.dev === "Приду✅"} /> Приду✅
-                            <input type="radio" value="Не смогу❌" {...registerEdit("dev")} defaultChecked={item.dev === "Не смогу❌"} /> Не смогу❌
+                            {/* <input type="radio" value="Приду✅" {...registerEdit("dev")} defaultChecked={item.dev === "Приду✅"} /> Приду✅
+                            <input type="radio" value="Не смогу❌" {...registerEdit("dev")} defaultChecked={item.dev === "Не смогу❌"} /> Не смогу❌ */}
                           </td>
                           <td style={{
                             display: "flex",
@@ -146,7 +147,8 @@ const GuestData: FC = () => {
                               <strong>{index + 1}</strong>
                             </p>
                           </td>
-                          <td><p>{item.name || item.partner}</p></td>
+                          <td><p>{item.name}</p></td>
+                          <td>{<p>{item.partner}</p>}</td>
                           <td><p>{item.dev}</p></td>
                           <td style={{
                             display: "flex", alignItems: "center", justifyContent: "center", gap: "10px"
@@ -162,11 +164,6 @@ const GuestData: FC = () => {
                       )}
                     </tr>
                   ))}
-                  <tr>
-                    <td><p><strong>Кол-о: {guests.length}</strong></p></td>
-                    <td><p><strong>Приду✅: {attendingCount}</strong></p></td>
-                    <td><p><strong>Не смогу❌: {notAttendingCount}</strong></p></td>
-                  </tr>
                 </tbody>
               </table>
             </form>
