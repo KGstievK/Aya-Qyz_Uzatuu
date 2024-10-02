@@ -32,18 +32,27 @@ const FormGuest = () => {
       const nameData = {
         id: FormData._id,
         name: FormData.name,
-        partner: FormData.partner,
         dev: FormData.dev,
       };
- 
+      const partnerData = {
+        partner: FormData.partner,
+        id: FormData._id,
+        dev: FormData.dev,
+      };
       const { data: responseName } = await axios.post(`${url}/Kutman-and-Aijan`, nameData, {
         headers: {
           Accept: "application/json, text/plain, */*",
           "Content-Type": "application/json",
         },
       });
-
+      const { data: responsePartner } = await axios.post(`${url}/Kutman-and-Aijan`, partnerData, {
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+      });
       console.log(responseName);
+      console.log(responsePartner);
       
       const messageModel = (FormData: FormType) => {
         let messageTG = `КИМ: <b>${FormData.name}</b>\n`;
