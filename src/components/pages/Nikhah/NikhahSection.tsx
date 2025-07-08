@@ -11,36 +11,36 @@ const NikhahSection = () => {
     <section className={scss.NikhahSection}>
       <div className="container">
         <Image className={scss.back} src={back} alt="" />
-        <h1>Wedding Day</h1>
+        {/* <h1>Wedding Day</h1> */}
         <div className={scss.content}>
           <div className={scss.name}>
             <div className={scss.we}>
               <Image className={scss.floral1} src={floral1} alt="" />
               <div className={scss.date}>
-                <h2 className={oswald.className}>ОКТЯБРЯ</h2>
+                <h2 className={oswald.className}>АВГУСТ</h2>
                 <div className={scss.day}>
-                  <h3 className={oswald.className}>4</h3>
-                  <p className={oswald.className}>2024</p>
+                  <h3 className={oswald.className}>1</h3>
+                  <p className={oswald.className}>2025</p>
                 </div>
                 <h2 className={oswald.className}>ПЯТНИЦА</h2>
               </div>
               <div className={scss.time}>
-                <h4 className={oswald.className}>17:00</h4>
+                <h4 className={oswald.className}>12:00</h4>
               </div>
             </div>
           </div>
           <div className={scss.name}>
             <div className={scss.we}>
               <div className={scss.dateCopy}>
-                <h2 className={oswald.className}>ОКТЯБРЯ</h2>
+                <h2 className={oswald.className}>АВГУСТ</h2>
                 <div className={scss.day}>
-                  <h3 className={oswald.className}>4</h3>
-                  <p className={oswald.className}>2024</p>
+                  <h3 className={oswald.className}>1</h3>
+                  <p className={oswald.className}>2025</p>
                 </div>
                 <h2 className={oswald.className}>ПЯТНИЦА</h2>
               </div>
               <div className={scss.timeCopy}>
-                <h4 className={oswald.className}>17:00</h4>
+                <h4 className={oswald.className}>12:00</h4>
               </div>
             </div>
           </div>

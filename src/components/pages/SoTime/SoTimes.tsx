@@ -22,7 +22,7 @@ const SoTimes = () => {
     seconds: 0,
   });
 
-  const targetDate = new Date("2024-10-05T17:00:00"); 
+  const targetDate = new Date("2025-08-01T17:00:00"); 
 
   const updateTimer = () => {
     const now = new Date();
