@@ -26,7 +26,7 @@ const Timing = () => {
             <p className={montserrat.className}>
               Живая музака <br /> Время для Ваших инстаграмных фото
             </p>
-            <h2 className={playfairDisplay.className}>17:00</h2>
+            <h2 className={playfairDisplay.className}>12:00</h2>
           </div>
           <div className={scss.Points}></div>
           <div className={scss.Points}></div>
@@ -34,7 +34,7 @@ const Timing = () => {
           <div className={scss.timing_cart}>
             <Image src={image2} alt="sdfs" />
             <h2 className={playfairDisplay.className}>НАЧАЛО ЦЕРЕМОНИЙ</h2>
-            <h2 className={playfairDisplay.className}>18:00</h2>
+            <h2 className={playfairDisplay.className}>13:00</h2>
           </div>
         </div>
       </div>
