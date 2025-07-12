@@ -25,7 +25,7 @@ const NikhahSection = () => {
                 <h2 className={oswald.className}>ПЯТНИЦА</h2>
               </div>
               <div className={scss.time}>
-                <h4 className={oswald.className}>12:00</h4>
+                <h4 className={oswald.className}>13:00</h4>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ const NikhahSection = () => {
                 <h2 className={oswald.className}>ПЯТНИЦА</h2>
               </div>
               <div className={scss.timeCopy}>
-                <h4 className={oswald.className}>12:00</h4>
+                <h4 className={oswald.className}>13:00</h4>
               </div>
             </div>
           </div>

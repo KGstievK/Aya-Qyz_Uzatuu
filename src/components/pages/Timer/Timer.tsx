@@ -21,8 +21,8 @@ const Timer: React.FC = () => {
               ТОЮНА АРНАЛГАН АК ДАСТОРКОНУБУЗДУН КАДЫРЛУУ КОНОГУ БОЛУУГА
               ЧАКЫРАБЫЗ
             </p>
-            <p className={oswald.className}>Саат 12:00</p>
-            <h1>Той ээлери: Арген</h1>
+            <p className={oswald.className}>Саат 13:00</p>
+            <h1>Той ээси: Арген</h1>
           </div>
           <div className={scss.titlee}>
             <div className={scss.line}></div>
@@ -33,13 +33,13 @@ const Timer: React.FC = () => {
             <p className={oswald.className}>
               УВАЖАЕМЫЕ ГОСТИ! МЫ ПРИГЛАШАЕМ ВАС НА ТОРЖЕСТВЕННЫЙ БАНКЕТ, ПОСВЯЩЕННЫЙ ПРОВОДАМ НАШЕЙ ЛЮБИМОЙ ДОЧЕРИ А-Я
             </p>
-            <p className={oswald.className}>В 12:00</p>
+            <p className={oswald.className}>В 13:00</p>
             {/* <p className={oswald.className}>
               Будем рады пригласить вас стать почётными гостями торжества,
               посвящённого бракосочетания
             </p> */}
             <h1>
-              С уважением хозяева торжества: <br /> Арген
+              Хозяева торжества: <br /> Арген
             </h1>
           </div>
         </div>
